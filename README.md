@@ -1,56 +1,73 @@
-# Edith Vision
+EDITH Vision – Iron Man–Style HUD with YOLOv8 & Face Recognition
+A cutting-edge Heads-Up Display (HUD) system inspired by EDITH from Spider-Man: Far From Home, integrating real-time object detection, face recognition, text detection, and voice-controlled AI to create an interactive augmented reality experience.
+🚀 Features
+Face Recognition – Identify and differentiate between known and unknown faces.
+Object Detection – Real-time detection of multiple objects using YOLOv8.
+Text Detection – Capture and process text from images or video feeds.
+Voice Interaction – Control the system and receive feedback via voice commands.
+Chatbot Integration – Converse with an AI-powered chatbot for intelligent responses.
 
-Iron Man–style personal AI assistant — lightweight, focused on `edith.py`.
+edith-vision/
+│
+├── assets/                 # Images, icons, and visual assets
+├── faces/                  # Known and unknown faces for recognition
+├── text_detection/         # Modules for OCR and text processing
+├── edith.py                # Main application script
+├── requirements.txt        # Python dependencies
+├── .env                    # Environment variables configuration
+├── README.md               # Project documentation
+└── session_logs/           # Logs of user sessions
 
-## Features
-- **YOLOv8-based object detection**  
-- **Face recognition**  
-- **Voice commands**  
-- **Simple single-file setup**  
+💻 Tech Stack
+Language: Python 3.x
+Computer Vision: OpenCV, YOLOv8
+Face Recognition: face_recognition library
+OCR/Text Detection: pytesseract
+Voice Interaction: pyttsx3, SpeechRecognition
+AI Chatbot: ChatterBot
 
-## Quick Start
-1. **Clone this repository**  
-   ```bash
-   git clone https://github.com/vkchamp09/edith-vision.git
-   cd edith-vision
-Add required models
-Place any YOLO model weights (e.g. yolov8n.pt) or other required files in the same folder as edith.py.
+⚡ Installation & Setup (Anaconda)
+Clone the Repository
+git clone https://github.com/vkchamp09/edith-vision.git
+cd edith-vision
+Create a Conda Environment
+conda create -n edith-vision python=3.11
+Activate the Environment
+conda activate edith-vision
 
-Install dependencies
-pip install -r requirements.txt
-
-Run Edith
+Configure Environment Variables
+Rename .env.example to .env
+Add your API keys or configuration values (if any)
+Run the Application
 python edith.py
 
-Notes
-Tested on Python 3.8+
-If using a custom YOLO model, update the path in edith.py accordingly.
+🛠 Usage
+The system will start the HUD interface with live camera feed.
+Voice Commands: Speak commands to interact with the AI assistant.
+Face Detection: Automatically identifies known faces and logs unknown faces.
+Object Detection: Recognizes and highlights objects in real-time.
+Text Detection: Detects text from images and displays results.
 
-Notes
-Tested on Python 3.8+
-If using a custom YOLO model, update the path in edith.py accordingly.
-Contributing
-Contributions are welcome!
-Fork the repository
-Create a new branch for your feature or fix (git checkout -b feature-name)
-Commit your changes (git commit -m "Add feature")
-Push to your branch (git push origin feature-name)
-Open a Pull Request
+<img width="955" height="566" alt="Screenshot 2025-08-18 at 6 10 08 PM" src="https://github.com/user-attachments/assets/f002a367-72df-442d-bf90-2da7d9c5c30f" />
 
-MIT License
-Copyright (c) 2025 vkchamp09
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+🤝 Contributing
+Contributions are welcome! Here’s how you can help:
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature).
+Make your changes and commit (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/your-feature).
+Create a Pull Request.
+
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+💡 Future Enhancements
+Integration with AR glasses for wearable HUD experience.
+Gesture controls for hands-free interaction.
+Enhanced multi-language voice recognition.
+Improved object detection accuracy with custom YOLOv8 models.
+📌 References
+YOLOv8 Official Docs
+OpenCV Python Docs
+ChatterBot
+Inspired by EDITH in Spider-Man: Far From Home
