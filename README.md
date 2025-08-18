@@ -48,7 +48,8 @@ Face Detection: Automatically identifies known faces and logs unknown faces.
 Object Detection: Recognizes and highlights objects in real-time.
 Text Detection: Detects text from images and displays results.
 
-<img width="955" height="566" alt="Screenshot 2025-08-18 at 6 10 08 PM" src="https://github.com/user-attachments/assets/f002a367-72df-442d-bf90-2da7d9c5c30f" />
+<img width="955" height="566" alt="Screenshot 2025-08-18 at 6 16 12 PM" src="https://github.com/user-attachments/assets/2545fa4e-e0c9-476e-95f7-f92ca3705e5d" />
+
 
 🤝 Contributing
 Contributions are welcome! Here’s how you can help:
